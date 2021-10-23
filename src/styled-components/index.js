@@ -188,5 +188,5 @@ export const BudgetNumber = styled.span`
 export const Message = styled.span`
   font-size: 20px;
   font-weight: 700;
-  margin-top: -30px;
+  margin-top: 20px;
 `;
