@@ -1,7 +1,7 @@
-import { FETCH_REMAINING_BUDGET } from "../actions/actionTypes";
+import { ADD_EXPENSE, FETCH_REMAINING_BUDGET } from "../actions/actionTypes";
 
 const initialState = {
-  remainingBudget: 2000,
+  remainingBudget: "2000",
   name: "",
   price: "",
 };
@@ -12,6 +12,11 @@ const budgetReducer = (state = initialState, action) => {
       return {
         ...state,
         remainingBudget: state.remainingBudget,
+      };
+    case ADD_EXPENSE:
+      return {
+        ...state,
+        ...action.payload,
       };
     default:
       return state;
