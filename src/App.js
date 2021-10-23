@@ -7,14 +7,13 @@ import SubHeader from "./components/subHeader";
 import RemaingBudget from "./components/remainingBudget";
 import SubmitExpense from "./components/submitExpense";
 import ListItem from "./components/listItem";
+import Header from "./components/header";
 
 const App = () => {
   return (
     <Container>
       <Box>
-        <BoxHeader>
-          <HeaderTitle>Personal budget</HeaderTitle>
-        </BoxHeader>
+        <Header />
         <SubHeader />
         <RemaingBudget />
         <SubmitExpense />
