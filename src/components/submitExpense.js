@@ -24,13 +24,17 @@ const SubmitExpense = () => {
   };
 
   const handleSubmitExpences = (values) => {
-    const item = {
-      name: values.name,
-      price: values.price,
-    };
-    dispatch(addExpence(item));
-    dispatch(decrementRemaining(item.price));
-    setValues({ name: "", price: "" });
+    if (values.name === "" || values.price === "") {
+      alert("Input fields cannot stay empty...!!!");
+    } else {
+      const item = {
+        name: values.name,
+        price: values.price,
+      };
+      dispatch(addExpence(item));
+      dispatch(decrementRemaining(item.price));
+      setValues({ name: "", price: "" });
+    }
   };
 
   return (

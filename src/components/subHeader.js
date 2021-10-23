@@ -8,6 +8,7 @@ import {
   PersonDetailsTitle,
   SubheaderContainer,
   BudgetNumber,
+  YourBudgetTitle,
 } from "../styled-components";
 
 const SubHeader = () => {
@@ -23,7 +24,7 @@ const SubHeader = () => {
       </PersonDetailsContainer>
       <BudgetContainer>
         <BudgetTitle>
-          Your Budget:
+          <YourBudgetTitle>Your Budget:</YourBudgetTitle>
           {dummyBudget.map((d) => (
             <BudgetNumber key={d.id}>{d.budget}</BudgetNumber>
           ))}
