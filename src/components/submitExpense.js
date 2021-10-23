@@ -1,6 +1,6 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addExpence } from "../redux/actions/actions";
+import { useDispatch } from "react-redux";
+import { addExpence, decrementRemaining } from "../redux/actions/actions";
 import {
   AddButton,
   ExpenseContainer,
@@ -25,6 +25,7 @@ const SubmitExpense = () => {
 
   const handleSubmitExpences = (values) => {
     dispatch(addExpence(values));
+    dispatch(decrementRemaining());
     setValues({ name: "", price: "" });
   };
 

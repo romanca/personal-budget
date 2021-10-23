@@ -1,4 +1,8 @@
-import { ADD_EXPENSE, FETCH_REMAINING_BUDGET } from "./actionTypes";
+import {
+  ADD_EXPENSE,
+  DECREMENT_REMAINING,
+  FETCH_REMAINING_BUDGET,
+} from "./actionTypes";
 
 export const fetchRemainingBudget = () => {
   return {
@@ -6,9 +10,15 @@ export const fetchRemainingBudget = () => {
   };
 };
 
-export function addExpence(payload) {
+export const addExpence = (payload) => {
   return {
     type: ADD_EXPENSE,
     payload,
   };
-}
+};
+
+export const decrementRemaining = () => {
+  return {
+    type: DECREMENT_REMAINING,
+  };
+};
