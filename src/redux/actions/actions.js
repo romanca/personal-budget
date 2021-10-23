@@ -1,6 +1,7 @@
 import {
   ADD_EXPENSE,
   DECREMENT_REMAINING,
+  FETCH_ITEMS,
   FETCH_REMAINING_BUDGET,
 } from "./actionTypes";
 
@@ -10,15 +11,22 @@ export const fetchRemainingBudget = () => {
   };
 };
 
-export const addExpence = (payload) => {
+export const fetchItems = () => {
   return {
-    type: ADD_EXPENSE,
-    payload,
+    type: FETCH_ITEMS,
   };
 };
 
-export const decrementRemaining = () => {
+export const addExpence = (item) => {
+  return {
+    type: ADD_EXPENSE,
+    payload: { ...item, id: Date.now() },
+  };
+};
+
+export const decrementRemaining = (payload) => {
   return {
     type: DECREMENT_REMAINING,
+    payload,
   };
 };
