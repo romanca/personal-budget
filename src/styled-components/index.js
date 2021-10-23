@@ -50,6 +50,7 @@ export const PersonDetailsTitle = styled.span`
 `;
 export const BudgetTitle = styled.span`
   text-decoration: underline;
+  display: flex;
 `;
 
 export const RemainingContainer = styled.div`
@@ -169,4 +170,8 @@ export const ItemTitle = styled.span`
 export const ItemBudget = styled.span`
   font-size: 20px;
   color: grey;
+`;
+
+export const BudgetNumber = styled.span`
+  font-weight: 800;
 `;

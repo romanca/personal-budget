@@ -29,6 +29,10 @@ import {
   ItemTitle,
   ItemBudget,
 } from "./styled-components";
+import SubHeader from "./components/subHeader";
+import RemaingBudget from "./components/remainingBudget";
+import SubmitExpense from "./components/submitExpense";
+import ListItem from "./components/listItem";
 
 const App = () => {
   return (
@@ -37,40 +41,10 @@ const App = () => {
         <BoxHeader>
           <HeaderTitle>Personal budget</HeaderTitle>
         </BoxHeader>
-        <SubheaderContainer>
-          <PersonDetailsContainer>
-            <Icon name="user" />
-            <PersonDetailsTitle>John Doe</PersonDetailsTitle>
-          </PersonDetailsContainer>
-          <BudgetContainer>
-            <BudgetTitle>Your Budget: 2000</BudgetTitle>
-          </BudgetContainer>
-        </SubheaderContainer>
-        <RemainingContainer>
-          <Remaining>remaining:</Remaining>
-          <RemainingAmountContainer>
-            <RemainingIcon>
-              <Icon name="eur" />
-            </RemainingIcon>
-            <RemainingAmount>1200</RemainingAmount>
-          </RemainingAmountContainer>
-        </RemainingContainer>
-        <ExpenseContainer>
-          <ExpenseTitle>Add expense</ExpenseTitle>
-          <SubmitContainer>
-            <ExpenseInputs>
-              <NameInput placeholder="Name" />
-              <PriceInput placeholder="Price" type="number" />
-            </ExpenseInputs>
-            <AddButton>+</AddButton>
-          </SubmitContainer>
-        </ExpenseContainer>
-        <ListItems>
-          <Item>
-            <ItemTitle>Grocerie</ItemTitle>
-            <ItemBudget>1200</ItemBudget>
-          </Item>
-        </ListItems>
+        <SubHeader />
+        <RemaingBudget />
+        <SubmitExpense />
+        <ListItem />
       </Box>
     </Container>
   );
