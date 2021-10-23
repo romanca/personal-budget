@@ -8,10 +8,11 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
-  border: 1px solid black;
-  height: 650px;
+  min-height: 650px;
   width: 750px;
-  border-radius: 10px;
+  // border-radius: 10px;
+  // box-shadow: 0 0 6px grey, 0 0 10px black;
+  overflow: hidden;
 `;
 
 export const BoxHeader = styled.div`
@@ -64,6 +65,7 @@ export const RemainingContainer = styled.div`
 
 export const Remaining = styled.span`
   font-size: 18px;
+  color: grey;
 `;
 
 export const RemainingAmountContainer = styled.div`
@@ -110,7 +112,7 @@ export const NameInput = styled.input`
   height: 25px;
   margin: 5px;
   border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 5px;
   font-size: 15px;
 `;
@@ -120,7 +122,7 @@ export const PriceInput = styled.input`
   outline: none;
   margin: 10px;
   border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid grey;
   padding: 5px;
   font-size: 15px;
 `;
@@ -130,12 +132,18 @@ export const AddButton = styled.button`
   justify-content: center;
   align-items: center;
   outline: none;
-  border: 1px solid black;
   font-size: 20px;
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  background: yellow;
+  background: #90ee90;
+  box-shadow: 0 0 3px yellow, 0 0 5px green;
+  border: none;
+  color: white;
+`;
+
+export const YourBudgetTitle = styled.div`
+  color: grey;
 `;
 
 export const SubmitContainer = styled.div`
@@ -161,23 +169,6 @@ export const Item = styled.div`
   padding: 10px;
   border-radius: 5px;
 `;
-
-// export const DeleteButton = styled.button`
-//   border: none;
-//   outline: none;
-//   margin-right: 15px;
-//   background: transparent;
-//   font-size: 20px;
-//   color: grey;
-//   cursor: pointer;
-// `;
-
-// export const ItemDetails = styled.div`
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// `;
 
 export const ItemTitle = styled.span`
   font-size: 20px;
