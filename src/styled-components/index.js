@@ -82,7 +82,6 @@ export const RemainingIcon = styled.div`
   align-items: center;
   font-size: 25px;
   margin-right: 5px;
-  background: red;
   height: 100%;
 `;
 
@@ -162,6 +161,23 @@ export const Item = styled.div`
   padding: 10px;
   border-radius: 5px;
 `;
+
+// export const DeleteButton = styled.button`
+//   border: none;
+//   outline: none;
+//   margin-right: 15px;
+//   background: transparent;
+//   font-size: 20px;
+//   color: grey;
+//   cursor: pointer;
+// `;
+
+// export const ItemDetails = styled.div`
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// `;
 
 export const ItemTitle = styled.span`
   font-size: 20px;
