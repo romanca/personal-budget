@@ -24,8 +24,12 @@ const SubmitExpense = () => {
   };
 
   const handleSubmitExpences = (values) => {
-    dispatch(addExpence(values));
-    dispatch(decrementRemaining());
+    const item = {
+      name: values.name,
+      price: values.price,
+    };
+    dispatch(addExpence(item));
+    dispatch(decrementRemaining(item.price));
     setValues({ name: "", price: "" });
   };
 

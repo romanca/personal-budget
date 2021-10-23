@@ -1,13 +1,28 @@
 import React from "react";
-import { Item, ItemBudget, ItemTitle, ListItems } from "../styled-components";
+import { useSelector } from "react-redux";
+import {
+  Item,
+  ItemBudget,
+  ItemTitle,
+  ListItems,
+  Message,
+} from "../styled-components";
 
 const ListItem = () => {
+  const items = useSelector((state) => state.budgetReducer.items);
+
   return (
     <ListItems>
-      <Item>
-        <ItemTitle>Grocerie</ItemTitle>
-        <ItemBudget>1200</ItemBudget>
-      </Item>
+      {items && items.length ? (
+        items.map((item) => (
+          <Item key={item.id}>
+            <ItemTitle>{item.name}</ItemTitle>
+            <ItemBudget>{item.price}</ItemBudget>
+          </Item>
+        ))
+      ) : (
+        <Message>You have no expences...</Message>
+      )}
     </ListItems>
   );
 };

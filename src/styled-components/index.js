@@ -151,6 +151,7 @@ export const ListItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const Item = styled.div`
@@ -174,4 +175,10 @@ export const ItemBudget = styled.span`
 
 export const BudgetNumber = styled.span`
   font-weight: 800;
+`;
+
+export const Message = styled.span`
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
 `;
