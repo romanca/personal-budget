@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Icon from "../Icon";
 import {
   Remaining,
@@ -9,6 +10,8 @@ import {
 } from "../styled-components";
 
 const RemaingBudget = () => {
+  const remaining = useSelector((state) => state.budgetReducer.remainingBudget);
+
   return (
     <RemainingContainer>
       <Remaining>remaining:</Remaining>
@@ -16,7 +19,7 @@ const RemaingBudget = () => {
         <RemainingIcon>
           <Icon name="eur" />
         </RemainingIcon>
-        <RemainingAmount>1200</RemainingAmount>
+        <RemainingAmount>{remaining}</RemainingAmount>
       </RemainingAmountContainer>
     </RemainingContainer>
   );
