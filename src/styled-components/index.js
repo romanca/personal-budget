@@ -8,10 +8,10 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
-  min-height: 650px;
+  height: 650px;
   width: 750px;
-  // border-radius: 10px;
-  // box-shadow: 0 0 6px grey, 0 0 10px black;
+  border-radius: 10px;
+  box-shadow: 0 0 6px grey, 0 0 10px black;
   overflow: hidden;
 `;
 
@@ -157,8 +157,9 @@ export const ListItems = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  height: 260px;
+  overflow: scroll;
 `;
 
 export const Item = styled.div`
@@ -187,5 +188,5 @@ export const BudgetNumber = styled.span`
 export const Message = styled.span`
   font-size: 20px;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: -30px;
 `;
