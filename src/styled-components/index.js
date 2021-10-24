@@ -17,7 +17,7 @@ export const Box = styled.div`
   // @media (min-width: 350px) {
   //   box-shadow: none;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     box-shadow: none;
   }
 `;
@@ -53,7 +53,7 @@ export const BudgetContainer = styled.div`
   // @media (min-width: 350px) {
   //   margin-right: 20px;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     margin-right: 20px;
   }
 `;
@@ -123,7 +123,7 @@ export const ExpenseInputs = styled.div`
   //   width: 100%;
   //   flex-direction: column;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;
   }
@@ -141,7 +141,7 @@ export const NameInput = styled.input`
   // @media (min-width: 350px) {
   //   width: 70%;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     width: 70%;
   }
 `;
@@ -158,7 +158,7 @@ export const PriceInput = styled.input`
   // @media (min-width: 350px) {
   //   width: 70%;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     width: 70%;
   }
 `;
@@ -181,10 +181,10 @@ export const AddButton = styled.button`
   //   border-radius: 5px;
   //   width: 74%;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     background: #90ee90;
     border-radius: 5px;
-    width: 74%;
+    width: 72%;
   }
 `;
 
@@ -200,7 +200,7 @@ export const SubmitContainer = styled.div`
   // @media (min-width: 350px) {
   //   flex-direction: column;
   // }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
