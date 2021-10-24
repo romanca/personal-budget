@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addExpence, decrementRemaining } from "../redux/actions/actions";
 import {
   AddButton,
@@ -14,6 +14,9 @@ import {
 const SubmitExpense = () => {
   const [values, setValues] = React.useState({ name: "", price: "" });
   const dispatch = useDispatch();
+  const remaining = useSelector((state) => state.budgetReducer.remainingBudget);
+
+  console.log(remaining);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +29,10 @@ const SubmitExpense = () => {
   const handleSubmitExpences = (values) => {
     if (values.name === "" || values.price === "") {
       alert("Input fields cannot stay empty...!!!");
+    } else if (remaining === 0) {
+      alert("You do not have enough budget...!!!");
+    } else if (values.price > remaining) {
+      alert("You do not have enough budget...!!!");
     } else {
       const item = {
         name: values.name,
