@@ -54,6 +54,7 @@ const SubmitExpense = () => {
             value={values.price}
             name="price"
             onChange={handleInputChange}
+            min="1"
           />
         </ExpenseInputs>
         <AddButton onClick={() => handleSubmitExpences(values)}>+</AddButton>
