@@ -8,7 +8,7 @@ import {
   Message,
 } from "../styled-components";
 
-const ListItem = () => {
+const Expenses = () => {
   const items = useSelector((state) => state.budgetReducer.items);
 
   return (
@@ -27,4 +27,4 @@ const ListItem = () => {
   );
 };
 
-export default ListItem;
+export default Expenses;
