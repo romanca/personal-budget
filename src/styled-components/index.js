@@ -14,9 +14,6 @@ export const Box = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 6px grey, 0 0 10px black;
   overflow: hidden;
-  // @media (min-width: 350px) {
-  //   box-shadow: none;
-  // }
   @media (max-width: 768px) {
     box-shadow: none;
   }
@@ -50,9 +47,6 @@ export const BudgetContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  // @media (min-width: 350px) {
-  //   margin-right: 20px;
-  // }
   @media (max-width: 768px) {
     margin-right: 20px;
   }
@@ -119,10 +113,6 @@ export const ExpenseInputs = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 55%;
-  // @media (min-width: 350px) {
-  //   width: 100%;
-  //   flex-direction: column;
-  // }
   @media (max-width: 768px) {
     width: 100%;
     flex-direction: column;
@@ -138,9 +128,6 @@ export const NameInput = styled.input`
   padding: 5px;
   font-size: 15px;
   box-shadow: 1px 1px 2px #888888;
-  // @media (min-width: 350px) {
-  //   width: 70%;
-  // }
   @media (max-width: 768px) {
     width: 70%;
   }
@@ -155,9 +142,6 @@ export const PriceInput = styled.input`
   padding: 5px;
   font-size: 15px;
   box-shadow: 1px 1px 2px #888888;
-  // @media (min-width: 350px) {
-  //   width: 70%;
-  // }
   @media (max-width: 768px) {
     width: 70%;
   }
@@ -176,11 +160,6 @@ export const AddButton = styled.button`
   box-shadow: 0 0 3px yellow, 0 0 5px green;
   border: none;
   color: white;
-  // @media (min-width: 350px) {
-  //   background: #90ee90;
-  //   border-radius: 5px;
-  //   width: 74%;
-  // }
   @media (max-width: 768px) {
     background: #90ee90;
     border-radius: 5px;
@@ -197,9 +176,6 @@ export const SubmitContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  // @media (min-width: 350px) {
-  //   flex-direction: column;
-  // }
   @media (max-width: 768px) {
     flex-direction: column;
   }
